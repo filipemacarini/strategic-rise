@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StrategicRise.Views.HomePage"
+             Title="HomePage">
+    <Grid
+        RowDefinitions=".35*, Auto, *, Auto">
+        <Image
+            Grid.Row="0"
+            Source="logo.png"
+            Aspect="AspectFit"
+            Margin="0, 30, 0, 0"/>
+        <Label
+            Grid.Row="1"
+            Text="Select the game"
+            FontFamily="PopS"
+            FontSize="20"
+            TextColor="{StaticResource Gray200}"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Margin="0, 30, 0, 20"/>
+        <CollectionView
+            Grid.Row="2"
+            Margin="30, 0, 30, 10"
+            SelectionMode="Single"   
+            SelectionChangedCommand="{Binding SelectedGameChangedCommand}"
+            SelectedItem="{Binding SelectedGame}"
+            ItemsSource="{Binding Games}">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border
+                        Background="{StaticResource Gray600}"
+                        StrokeThickness="0">
+                        <Border
+                            StrokeThickness="2"
+                            Stroke="{Binding BorderColor}"
+                            StrokeShape="RoundRectangle 20, 20, 20, 20"
+                            BackgroundColor="{StaticResource Gray500}"
+                            Padding="10">
+                            <Grid
+                                ColumnDefinitions="70, *"
+                                ColumnSpacing="10">
+                                <Border
+                                    Grid.Column="0"
+                                    BackgroundColor="White"
+                                    StrokeShape="RoundRectangle 16, 16, 16, 16"
+                                    HeightRequest="70"
+                                    StrokeThickness="0"/>
+                                <VerticalStackLayout
+                                    Grid.Column="1">
+                                    <Label
+                                        Text="{Binding Name}"
+                                        FontSize="20"
+                                        FontFamily="PopS"
+                                        TextColor="White"
+                                        Margin="0"/>
+                                    <Label
+                                        Text="{Binding Description}"
+                                        FontSize="16"
+                                        FontFamily="PopS"
+                                        TextColor="{StaticResource Gray200}"/>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Border
+            Grid.Row="3"
+            StrokeThickness="0"
+            StrokeShape="RoundRectangle 60, 60, 0, 0"
+            BackgroundColor="{StaticResource Gray900}"
+            Padding="20, 15">
+            <Button
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="End"
+                HeightRequest="80"
+                CornerRadius="40"
+                BackgroundColor="{StaticResource Green}"
+                TextColor="White"
+                Text="PLAY"
+                FontSize="42"
+                FontFamily="PopS"
+                Command="{Binding StartGameCommand}"/>
+        </Border>
+    </Grid>
+</ContentPage>

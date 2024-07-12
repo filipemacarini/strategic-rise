@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="StrategicRise.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:StrategicRise.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="StrategicRise">
+
+    <TabBar>
+        <Tab>
+            <Tab.Icon>
+                <FontImageSource
+                    FontFamily="IconsTB"
+                    Glyph="&#xE800;"/>
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"/>
+        </Tab>
+        <Tab>
+            <Tab.Icon>
+                <FontImageSource
+                    FontFamily="IconsTB"
+                    Glyph="&#xF21B;"/>
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate local:AccountPage}"/>
+        </Tab>
+    </TabBar>
+
+</Shell>

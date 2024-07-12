@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StrategicRise</name>
+    </assembly>
+    <members>
+        <member name="T:StrategicRise.Models.GameCard">
+            <inheritdoc/>
+        </member>
+        <member name="P:StrategicRise.Models.GameCard.BorderColor">
+            <inheritdoc cref="F:StrategicRise.Models.GameCard._borderColor"/>
+        </member>
+        <member name="T:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.NumberOfPlayers">
+            <inheritdoc cref="F:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel._numberOfPlayers"/>
+        </member>
+        <member name="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.Height">
+            <inheritdoc cref="F:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel._height"/>
+        </member>
+        <member name="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.Width">
+            <inheritdoc cref="F:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel._width"/>
+        </member>
+        <member name="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.ArRightPlayersIsVisible">
+            <inheritdoc cref="F:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel._arRightPlayersIsVisible"/>
+        </member>
+        <member name="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.ArLeftPlayersIsVisible">
+            <inheritdoc cref="F:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel._arLeftPlayersIsVisible"/>
+        </member>
+        <member name="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.ArRightHeightIsVisible">
+            <inheritdoc cref="F:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel._arRightHeightIsVisible"/>
+        </member>
+        <member name="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.ArLeftHeightIsVisible">
+            <inheritdoc cref="F:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel._arLeftHeightIsVisible"/>
+        </member>
+        <member name="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.SelectedMode">
+            <inheritdoc cref="F:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel._selectedMode"/>
+        </member>
+        <member name="F:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.returnToHomePageCommand">
+            <summary>The backing field for <see cref="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.ReturnToHomePageCommand"/>.</summary>
+        </member>
+        <member name="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.ReturnToHomePageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.ReturnToHomePage"/>.</summary>
+        </member>
+        <member name="F:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.selectGameModeCommand">
+            <summary>The backing field for <see cref="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.SelectGameModeCommand"/>.</summary>
+        </member>
+        <member name="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.SelectGameModeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.SelectGameMode(System.Object)"/>.</summary>
+        </member>
+        <member name="F:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.addPlayerCommand">
+            <summary>The backing field for <see cref="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.AddPlayerCommand"/>.</summary>
+        </member>
+        <member name="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.AddPlayerCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.AddPlayer"/>.</summary>
+        </member>
+        <member name="F:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.removePlayerCommand">
+            <summary>The backing field for <see cref="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.RemovePlayerCommand"/>.</summary>
+        </member>
+        <member name="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.RemovePlayerCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.RemovePlayer"/>.</summary>
+        </member>
+        <member name="F:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.addHeightCommand">
+            <summary>The backing field for <see cref="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.AddHeightCommand"/>.</summary>
+        </member>
+        <member name="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.AddHeightCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.AddHeight"/>.</summary>
+        </member>
+        <member name="F:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.removeHeightCommand">
+            <summary>The backing field for <see cref="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.RemoveHeightCommand"/>.</summary>
+        </member>
+        <member name="P:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.RemoveHeightCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:StrategicRise.ViewModels.Games.Domination.DominationSetupPageViewModel.RemoveHeight"/>.</summary>
+        </member>
+        <member name="T:StrategicRise.ViewModels.HomePageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:StrategicRise.ViewModels.HomePageViewModel.SelectedGame">
+            <inheritdoc cref="F:StrategicRise.ViewModels.HomePageViewModel._selectedGame"/>
+        </member>
+        <member name="F:StrategicRise.ViewModels.HomePageViewModel.selectedGameChangedCommand">
+            <summary>The backing field for <see cref="P:StrategicRise.ViewModels.HomePageViewModel.SelectedGameChangedCommand"/>.</summary>
+        </member>
+        <member name="P:StrategicRise.ViewModels.HomePageViewModel.SelectedGameChangedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:StrategicRise.ViewModels.HomePageViewModel.SelectedGameChanged"/>.</summary>
+        </member>
+        <member name="F:StrategicRise.ViewModels.HomePageViewModel.startGameCommand">
+            <summary>The backing field for <see cref="P:StrategicRise.ViewModels.HomePageViewModel.StartGameCommand"/>.</summary>
+        </member>
+        <member name="P:StrategicRise.ViewModels.HomePageViewModel.StartGameCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:StrategicRise.ViewModels.HomePageViewModel.StartGame"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.BorderColor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "BorderColor" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NumberOfPlayers">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NumberOfPlayers" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Height">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Height" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Width">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Width" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ArRightPlayersIsVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ArRightPlayersIsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ArLeftPlayersIsVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ArLeftPlayersIsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ArRightHeightIsVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ArRightHeightIsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ArLeftHeightIsVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ArLeftHeightIsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedMode">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedMode" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedGame">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedGame" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.BorderColor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "BorderColor" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NumberOfPlayers">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NumberOfPlayers" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Height">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Height" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Width">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Width" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ArRightPlayersIsVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ArRightPlayersIsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ArLeftPlayersIsVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ArLeftPlayersIsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ArRightHeightIsVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ArRightHeightIsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ArLeftHeightIsVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ArLeftHeightIsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedMode">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedMode" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedGame">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedGame" generated properties.</summary>
+        </member>
+    </members>
+</doc>

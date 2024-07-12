@@ -1,0 +1,71 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = StrategicRise
+build_property.ProjectDir = E:\Projetos\Meus Repositórios Github\strategic-rise\StrategicRise\StrategicRise\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[E:/Projetos/Meus Repositórios Github/strategic-rise/StrategicRise/StrategicRise/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StrategicRise.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[E:/Projetos/Meus Repositórios Github/strategic-rise/StrategicRise/StrategicRise/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StrategicRise.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[E:/Projetos/Meus Repositórios Github/strategic-rise/StrategicRise/StrategicRise/Controls/PropertyModifierControl.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StrategicRise.Controls.PropertyModifierControl.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls\PropertyModifierControl.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls\PropertyModifierControl.xaml
+
+[E:/Projetos/Meus Repositórios Github/strategic-rise/StrategicRise/StrategicRise/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StrategicRise.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[E:/Projetos/Meus Repositórios Github/strategic-rise/StrategicRise/StrategicRise/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StrategicRise.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[E:/Projetos/Meus Repositórios Github/strategic-rise/StrategicRise/StrategicRise/Views/AccountPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StrategicRise.Views.AccountPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AccountPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AccountPage.xaml
+
+[E:/Projetos/Meus Repositórios Github/strategic-rise/StrategicRise/StrategicRise/Views/Games/Domination/DominationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StrategicRise.Views.Games.Domination.DominationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Games\Domination\DominationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Games\Domination\DominationPage.xaml
+
+[E:/Projetos/Meus Repositórios Github/strategic-rise/StrategicRise/StrategicRise/Views/Games/Domination/DominationSetupPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StrategicRise.Views.Games.Domination.DominationSetupPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Games\Domination\DominationSetupPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Games\Domination\DominationSetupPage.xaml
+
+[E:/Projetos/Meus Repositórios Github/strategic-rise/StrategicRise/StrategicRise/Views/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StrategicRise.Views.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml

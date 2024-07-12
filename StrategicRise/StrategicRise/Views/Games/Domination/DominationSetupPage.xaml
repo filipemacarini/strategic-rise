@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:StrategicRise.Converters"
+             xmlns:controls="clr-namespace:StrategicRise.Controls"
+             x:Class="StrategicRise.Views.Games.Domination.DominationSetupPage"
+             Title="DominationSetupPage">
+    <ContentPage.Resources>
+        <converters:ModesConverter x:Key="ModesConverter" />
+    </ContentPage.Resources>
+    <Grid
+        RowDefinitions="Auto, Auto, *">
+        <Image
+            Grid.Row="0"
+            HorizontalOptions="Start"
+            Margin="20, 20, 0, 0">
+            <Image.Source>
+                <FontImageSource
+                    Glyph="&#xE801;"
+                    FontFamily="IconsTB"
+                    Size="32"/>
+            </Image.Source>
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding ReturnToHomePageCommand}" />
+            </Image.GestureRecognizers>
+        </Image>
+        <VerticalStackLayout 
+            Grid.Row="1"
+            HorizontalOptions="Center">
+            <Border
+                StrokeShape="RoundRectangle 30, 30, 30, 30"
+                BackgroundColor="White"
+                HeightRequest="120"
+                WidthRequest="120">
+            </Border>
+            <Label
+                Text="Domination"
+                FontFamily="PopS"
+                FontSize="34"
+                TextColor="White"
+                Margin="0, 20, 0, 5"/>
+        </VerticalStackLayout>
+        <Border
+            Grid.Row="3"
+            StrokeThickness="0"
+            StrokeShape="RoundRectangle 60, 60, 0, 0"
+            BackgroundColor="{StaticResource Gray900}"
+            Padding="20, 15">
+            <Grid
+                RowDefinitions="Auto, *, *, *, *"
+                RowSpacing="20">
+                <Button
+                    Grid.Row="0"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="End"
+                    HeightRequest="80"
+                    CornerRadius="40"
+                    BackgroundColor="{StaticResource Green}"
+                    TextColor="White"
+                    Text="START"
+                    FontSize="42"
+                    FontFamily="PopS"/>
+                <Border
+                    Grid.Row="1"
+                    HeightRequest="60"
+                    StrokeThickness="4"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    BackgroundColor="{StaticResource Gray500}"
+                    Stroke="{StaticResource Gray500}">
+                    <Grid
+                        x:Name="GdModes"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        ColumnDefinitions="*, *">
+                        <Border
+                            Grid.Column="0"
+                            x:Name="BdOnline"
+                            BackgroundColor="{StaticResource Gray600}"
+                            StrokeThickness="0">
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SelectGameModeCommand}">
+                                    <TapGestureRecognizer.CommandParameter>
+                                        <MultiBinding Converter="{StaticResource ModesConverter}">
+                                            <MultiBinding.Bindings>
+                                                <Binding Source="{x:Reference BdOnline}" />
+                                                <Binding Source="{x:Reference GdModes}"/>
+                                            </MultiBinding.Bindings>
+                                        </MultiBinding>
+                                    </TapGestureRecognizer.CommandParameter>
+                                </TapGestureRecognizer>
+                            </Border.GestureRecognizers>
+                            <Label
+                                Text="Online"
+                                TextColor="{StaticResource Gray200}"
+                                FontFamily="PopS"
+                                FontSize="20"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"/>
+                        </Border>
+                        <Border
+                            Grid.Column="1"
+                            x:Name="BdOffline"
+                            BackgroundColor="{StaticResource Gray500}"
+                            StrokeThickness="0">
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SelectGameModeCommand}">
+                                    <TapGestureRecognizer.CommandParameter>
+                                        <MultiBinding Converter="{StaticResource ModesConverter}">
+                                            <MultiBinding.Bindings>
+                                                <Binding Source="{x:Reference BdOffline}" />
+                                                <Binding Source="{x:Reference GdModes}"/>
+                                            </MultiBinding.Bindings>
+                                        </MultiBinding>
+                                    </TapGestureRecognizer.CommandParameter>
+                                </TapGestureRecognizer>
+                            </Border.GestureRecognizers>
+                            <Label
+                                Text="Offline"
+                                TextColor="{StaticResource Gray200}"
+                                FontFamily="PopS"
+                                FontSize="20"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"/>
+                        </Border>
+                    </Grid>
+                </Border>
+                <VerticalStackLayout
+                    Grid.Row="2">
+                    <Label
+                        Text="Players"
+                        FontSize="18"
+                        FontFamily="PopS"
+                        TextColor="{StaticResource Gray200}"
+                        HorizontalTextAlignment="Center"/>
+                    <Grid
+                        ColumnDefinitions="*, Auto, *"
+                        HeightRequest="36">
+                        <Image
+                            Grid.Column="0"
+                            IsVisible="{Binding ArLeftPlayersIsVisible}"
+                            HeightRequest="26"
+                            WidthRequest="26"
+                            VerticalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding RemovePlayerCommand}" />
+                            </Image.GestureRecognizers>
+                            <Image.Source>
+                                <FontImageSource
+                                    Glyph="&#xF007;"
+                                    FontFamily="IconsTB"
+                                    Color="{StaticResource Gray100}"/>
+                            </Image.Source>
+                        </Image>
+                        <Label
+                            Grid.Column="1"
+                            VerticalOptions="Center"
+                            HorizontalTextAlignment="Center"
+                            WidthRequest="40"
+                            Text="{Binding NumberOfPlayers}"
+                            HeightRequest="41"
+                            FontSize="28"
+                            FontFamily="PopS"
+                            TextColor="{StaticResource Gray100}"/>
+                        <Image
+                            Grid.Column="2"
+                            IsVisible="{Binding ArRightPlayersIsVisible}"
+                            HeightRequest="26"
+                            WidthRequest="26"
+                            VerticalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AddPlayerCommand}" />
+                            </Image.GestureRecognizers>
+                            <Image.Source>
+                                <FontImageSource
+                                    Glyph="&#xF006;"
+                                    FontFamily="IconsTB"
+                                    Color="{StaticResource Gray100}"/>
+                            </Image.Source>
+                        </Image>
+                    </Grid>
+                </VerticalStackLayout>
+                <VerticalStackLayout
+                    Grid.Row="3">
+                    <Label
+                        Text="Height"
+                        FontSize="18"
+                        FontFamily="PopS"
+                        TextColor="{StaticResource Gray200}"
+                        HorizontalTextAlignment="Center"/>
+                    <Grid
+                        ColumnDefinitions="*, Auto, *"
+                        HeightRequest="36">
+                        <Image
+                            Grid.Column="0"
+                            IsVisible="{Binding ArLeftHeightIsVisible}"
+                            HeightRequest="26"
+                            WidthRequest="26"
+                            VerticalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding RemoveHeightCommand}" />
+                            </Image.GestureRecognizers>
+                            <Image.Source>
+                                <FontImageSource
+                                    Glyph="&#xF007;"
+                                    FontFamily="IconsTB"
+                                    Color="{StaticResource Gray100}"/>
+                            </Image.Source>
+                        </Image>
+                        <Label
+                            Grid.Column="1"
+                            VerticalOptions="Center"
+                            HorizontalTextAlignment="Center"
+                            WidthRequest="40"
+                            Text="{Binding Height}"
+                            HeightRequest="41"
+                            FontSize="28"
+                            FontFamily="PopS"
+                            TextColor="{StaticResource Gray100}"/>
+                        <Image
+                            Grid.Column="2"
+                            IsVisible="{Binding ArRightHeightIsVisible}"
+                            HeightRequest="26"
+                            WidthRequest="26"
+                            VerticalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AddHeightCommand}" />
+                            </Image.GestureRecognizers>
+                            <Image.Source>
+                                <FontImageSource
+                                    Glyph="&#xF006;"
+                                    FontFamily="IconsTB"
+                                    Color="{StaticResource Gray100}"/>
+                            </Image.Source>
+                        </Image>
+                    </Grid>
+                </VerticalStackLayout>
+                <controls:PropertyModifierControl
+                    Grid.Row="4"
+                    DimensionTitle="Width"
+                    Ratio="1"
+                    Minimum="4"
+                    Maximum="30"
+                    Number="{Binding Width}"/>
+            </Grid>
+        </Border>
+    </Grid>
+</ContentPage>
